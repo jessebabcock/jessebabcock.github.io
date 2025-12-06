@@ -1,0 +1,19 @@
+@media(max-width: 600px){
+  .item>p{
+    text-align: center;
+    margin: auto;
+  }
+  
+  .image-set{
+    margin: 0 auto 10px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .item{
+    justify-content: center;
+    flex-direction: column;
+  }
+}
