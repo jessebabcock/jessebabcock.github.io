@@ -214,11 +214,6 @@ body{
   position: relative;
 }
 
-p{
-  margin-top: 0;
-  margin-left: 5%;
-}
-
 .item{
   display: flex;
   margin-left: 3px;
