@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function (){
         console.log(element, element.querySelector(".info"));
 
         element.addEventListener('mouseenter', function(){
-            var infoBubble = element.querySelector(".info");
+            const infoBubble = element.querySelector(".info");
             infoBubble.style.visibility = 'hidden';
         });
 
