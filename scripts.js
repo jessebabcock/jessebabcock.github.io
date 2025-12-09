@@ -14,7 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const catPic = document.getElementById("cat_container");
     //absolute regex banger
     // grabs filepath name '/personal_website/index.html' -> index
-    const homeButton = document.getElementById(window.location.pathname.split(new RegExp('.*[\/]+([^.]*)'))[1].toString())
+    let fileName = window.location.pathname.split(new RegExp('.*[\/]+([^.]*)'))[1].toString();
+    if (fileName === ''){
+        fileName = 'index';
+    }
+    const homeButton = document.getElementById(fileName);
 
     //center cat on buttons
     catPic.style.left = (homeButton.offsetLeft + homeButton.offsetWidth / 2 - catPic.offsetWidth / 2).toString() + "px";
