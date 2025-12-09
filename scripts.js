@@ -6,11 +6,11 @@ function catPositionCalc(){
     if (fileName === ''){
         fileName = 'index';
     }
-    const homeButton = document.getElementById(fileName);
+    const navButton = document.getElementById(fileName);
 
     //center cat on buttons
-    catPic.style.left = (homeButton.offsetLeft + homeButton.offsetWidth / 2 - catPic.offsetWidth / 2).toString() + "px";
-    catPic.style.top = (homeButton.offsetTop - 40).toString() + "px";
+    catPic.style.left = (navButton.offsetLeft + navButton.offsetWidth / 2 - catPic.offsetWidth / 2).toString() + "px";
+    catPic.style.top = (navButton.offsetTop - 40).toString() + "px";
 }
 
 
