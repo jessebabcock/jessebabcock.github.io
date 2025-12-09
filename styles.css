@@ -16,12 +16,12 @@
 
 #cat_container{
     position:absolute;
-    border:none;
 }
 
 #purple_cat{
     width: 45px;
     height: 45px;
+    border:none;
 }
 
 a{

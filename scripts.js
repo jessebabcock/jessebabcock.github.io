@@ -9,13 +9,19 @@ document.querySelectorAll(".image-set").forEach(function (element){
     });
 });
 
-const catPic = document.getElementById("cat_container");
-//absolute regex banger
-// grabs filepath name '/personal_website/index.html' -> index
-const homeButton = document.getElementById(window.location.pathname.split(new RegExp('.*[\/]+([^.]*)'))[1].toString())
+document.addEventListener("DOMContentLoaded", function() {
 
-//center cat on buttons
-catPic.style.left = (homeButton.offsetLeft + homeButton.offsetWidth / 2 - catPic.offsetWidth / 2).toString() + "px";
-catPic.style.top = (homeButton.offsetTop - 40).toString() + "px";
+    const catPic = document.getElementById("cat_container");
+    //absolute regex banger
+    // grabs filepath name '/personal_website/index.html' -> index
+    const homeButton = document.getElementById(window.location.pathname.split(new RegExp('.*[\/]+([^.]*)'))[1].toString())
+
+    //center cat on buttons
+    catPic.style.left = (homeButton.offsetLeft + homeButton.offsetWidth / 2 - catPic.offsetWidth / 2).toString() + "px";
+    catPic.style.top = (homeButton.offsetTop - 40).toString() + "px";
+
+});
+
+
 
 
