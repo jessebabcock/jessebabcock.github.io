@@ -24,9 +24,21 @@ document.querySelectorAll(".image-set").forEach(function (element){
         infoBubble.style.visibility = 'hidden';
     });
 
-    element.addEventListener('mouseleave', function(){
-        element.querySelector(".info").style.visibility = 'visible';
+    element.addEventListener('focus', function(){
+        const infoBubble = element.querySelector(".info");
+        infoBubble.style.visibility = 'hidden';
     });
+
+    element.addEventListener('mouseleave', function(){
+        if (!(document.activeElement === element)){
+            element.querySelector(".info").style.visibility = 'visible';
+        }
+    });
+
+    element.addEventListener('focusout', function(){
+        document.activeElement.blur();
+        element.querySelector(".info").style.visibility = 'visible';
+    })
 });
 
 document.addEventListener("DOMContentLoaded", function() {
