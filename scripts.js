@@ -11,6 +11,10 @@ function catPositionCalc(){
     //center cat on buttons
     catPic.style.left = (navButton.offsetLeft + navButton.offsetWidth / 2 - catPic.offsetWidth / 2).toString() + "px";
     catPic.style.top = (navButton.offsetTop - 40).toString() + "px";
+    if (fileName === 'index'){
+        fileName = 'home'
+    }
+    document.getElementById("purple_cat").alt = "purple cat sitting above the " + fileName + " button";
 }
 
 
