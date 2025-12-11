@@ -1,7 +1,7 @@
 function catPositionCalc(){
     const catPic = document.getElementById("cat_container");
     //absolute regex banger
-    // grabs filepath name '/personal_website/index.html' -> index
+    //grabs filepath name '/personal_website/index.html' -> index
     let fileName = window.location.pathname.split(new RegExp('.*[\/]+([^.]*)'))[1].toString();
     if (fileName === ''){
         fileName = 'index';
@@ -38,7 +38,8 @@ document.querySelectorAll(".image-set").forEach(function (element){
     element.addEventListener('focusout', function(){
         document.activeElement.blur();
         element.querySelector(".info").style.visibility = 'visible';
-    })
+    });
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -1,19 +1,19 @@
-@media(max-width: 600px){
-  .item>p{
-    text-align: center;
-    margin: auto;
-  }
-  
-  .image-set{
-    margin: 0 auto 10px;
-  }
+@media (max-width: 600px) {
+    .item > p {
+        text-align: center;
+        margin: auto;
+    }
 
-  h1{
-    text-align: center;
-  }
+    .image-set {
+        margin: 0 auto 10px;
+    }
 
-  .item{
-    justify-content: center;
-    flex-direction: column;
-  }
+    .item-name{
+        text-align: center;
+    }
+
+    .item {
+        justify-content: center;
+        flex-direction: column;
+    }
 }
