@@ -1,7 +1,6 @@
 @media (max-width: 600px) {
     .item > p {
         text-align: center;
-        margin: auto;
     }
 
     .image-set {
@@ -15,5 +14,10 @@
     .item {
         justify-content: center;
         flex-direction: column;
+    }
+
+    ol>li{
+        margin-top: 25px;
+        margin-bottom: 75px;
     }
 }
