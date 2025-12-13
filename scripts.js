@@ -39,7 +39,26 @@ document.querySelectorAll(".image-set").forEach(function (element){
         document.activeElement.blur();
         element.querySelector(".info").style.visibility = 'visible';
     });
+});
 
+//CSS initializing z-index = 2 shows as <empty string> for some reason
+const colorModeButton = document.getElementById("color_mode");
+const flower = colorModeButton.firstElementChild;
+flower.style.zIndex = "2";
+
+const theme = ["--color-main", "--color-secondary", "--color-tertiary", "--color-nav-font"];
+const fragrantTheme = ["--fragrant-main", "--fragrant-secondary", "--fragrant-tertiary", "--fragrant-nav-font"];
+const waveTheme = ["--wave-main", "--wave-secondary", "--wave-tertiary", "--wave-nav-font"];
+
+colorModeButton.addEventListener('click', function(){
+    flower.style.zIndex = (flower.style.zIndex ^ 2).toString();
+    let target = fragrantTheme;
+    if (parseInt(flower.style.zIndex) !== 2){
+        target = waveTheme;
+    }
+    for(let i = 0; i < theme.length; i++){
+        document.documentElement.style.setProperty(theme[i], "var(" + target[i] + ")");
+    }
 });
 
 document.addEventListener("DOMContentLoaded", function() {

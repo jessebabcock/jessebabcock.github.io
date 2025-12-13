@@ -4,14 +4,60 @@
 
 :root {
     --bs-body-font-family: sans-serif;
+
+    --wave-main: #9bc5d5;
+    --wave-secondary: #3995b5;
+    --wave-tertiary: #7ab8ca;
+    --wave-nav-font: #053341;
+
+    --fragrant-main: #e8d4ff;
+    --fragrant-secondary: #ba7dff;
+    --fragrant-tertiary: #DCBDFF;
+    --fragrant-nav-font: #3c005d;
+
+    --color-main: var(--fragrant-main);
+    --color-secondary: var(--fragrant-secondary);
+    --color-tertiary: var(--fragrant-tertiary);
+    --color-nav-font: var(--fragrant-nav-font);
+}
+
+#flower{
+    z-index: 2;
+}
+
+#wave{
+    z-index: 0;
+}
+
+h1{
+    clear:left;
+}
+
+#color_mode{
+    position: fixed;
+    top: 4%;
+    left: 94%;
+    border-radius: 50%;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+#color_mode>*{
+    position: absolute;
+    width: 50px;
+    height: 50px;
 }
 
 .nav-bar > a {
-    border: 1px solid #ba7dff;
+    border: 1px solid var(--color-secondary);
     border-radius: 5px;
     padding: 5px;
-    background-color: #DCBDFF;
-    color: #3c005d;
+    background-color: var(--color-tertiary);
+    color: var(--color-nav-font);
 }
 
 #cat_container {
@@ -34,7 +80,7 @@ a {
 }
 
 body {
-    background-color: #e8d4ff;
+    background-color: var(--color-main);
 }
 
 .image-set:hover, .image-set:focus, .image-set:has(.description>a:focus) {
@@ -123,6 +169,8 @@ figure > img {
     width: 250px;
     float: left;
     height: 150px;
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 .center {
@@ -131,12 +179,6 @@ figure > img {
 
 .link {
     text-decoration: none;
-}
-
-
-img {
-    border: 1px solid black;
-    border-radius: 2px;
 }
 
 .item-name {
