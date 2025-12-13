@@ -16,8 +16,6 @@ function catPositionCalc(){
     }
     document.getElementById("purple_cat").alt = "purple cat sitting above the " + fileName + " button";
 }
-
-
 document.querySelectorAll(".image-set").forEach(function (element){
     element.addEventListener('mouseenter', function(){
         const infoBubble = element.querySelector(".info");
