@@ -8,8 +8,8 @@ function catPositionCalc(){
     }
     const navButton = document.getElementById(fileName);
 
-    //center cat on buttons
-    catPic.style.left = (navButton.offsetLeft + navButton.offsetWidth / 2 - catPic.offsetWidth / 2).toString() + "px";
+    //center cat on buttons (navButton.offsetWidth / number of items * 2 for offsets)
+    catPic.style.left = (navButton.offsetLeft + navButton.offsetWidth / 4 - catPic.offsetWidth / 2).toString() + "px";
     catPic.style.top = (navButton.offsetTop - 40).toString() + "px";
     if (fileName === 'index'){
         fileName = 'home'
@@ -53,11 +53,22 @@ const theme = ["--color-main", "--color-secondary", "--color-tertiary", "--color
 const fragrantTheme = ["--fragrant-main", "--fragrant-secondary", "--fragrant-tertiary", "--fragrant-nav-font"];
 const waveTheme = ["--wave-main", "--wave-secondary", "--wave-tertiary", "--wave-nav-font"];
 
+const purpleCat = document.getElementById("purple_cat");
+const blueCat = document.getElementById("blue_cat");
+purpleCat.style.opacity = "100";
+blueCat.style.opacity = "0";
+
 colorModeButton.addEventListener('click', function(){
     flower.style.opacity = (flower.style.opacity ^ 100).toString();
     wave.style.opacity = (wave.style.opacity ^ 100).toString();
+    blueCat.style.opacity = (blueCat.style.opacity ^ 100).toString();
+    purpleCat.style.opacity = (purpleCat.style.opacity ^ 100).toString();
+
     flower.style.transition = "opacity .25s";
     wave.style.transition = "opacity .25s";
+    blueCat.style.transition = "opacity .5s";
+    purpleCat.style.transition = "opacity .5s";
+
     let target = fragrantTheme;
     if (flower.style.opacity !== "100"){
         target = waveTheme;

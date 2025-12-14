@@ -59,14 +59,15 @@ h1{
 }
 
 #cat_container {
+    clear:both;
     position: absolute;
     visibility: hidden;
 }
 
-#purple_cat {
+#cat_container>* {
+    position: absolute;
     width: 45px;
     height: 45px;
-    border: none;
 }
 
 a {
