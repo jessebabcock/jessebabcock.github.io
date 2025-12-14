@@ -41,19 +41,27 @@ document.querySelectorAll(".image-set").forEach(function (element){
 
 //CSS initializing z-index = 2 shows as <empty string> for some reason
 const colorModeButton = document.getElementById("color_mode");
-const flower = colorModeButton.firstElementChild;
+const flower = document.getElementById("flower");
+const wave = document.getElementById("wave");
 flower.style.zIndex = "2";
+flower.style.opacity = "100";
+wave.style.opacity = "0";
 
 const theme = ["--color-main", "--color-secondary", "--color-tertiary", "--color-nav-font"];
 const fragrantTheme = ["--fragrant-main", "--fragrant-secondary", "--fragrant-tertiary", "--fragrant-nav-font"];
 const waveTheme = ["--wave-main", "--wave-secondary", "--wave-tertiary", "--wave-nav-font"];
 
 colorModeButton.addEventListener('click', function(){
-    flower.style.zIndex = (flower.style.zIndex ^ 2).toString();
+    flower.style.opacity = (flower.style.opacity ^ 100).toString();
+    wave.style.opacity = (wave.style.opacity ^ 100).toString();
+    flower.style.transition = "opacity .25s";
+    wave.style.transition = "opacity .25s";
+    console.log(flower.style.opacity)
     let target = fragrantTheme;
-    if (parseInt(flower.style.zIndex) !== 2){
+    if (flower.style.opacity !== "100"){
         target = waveTheme;
     }
+
     for(let i = 0; i < theme.length; i++){
         document.documentElement.style.setProperty(theme[i], "var(" + target[i] + ")");
     }

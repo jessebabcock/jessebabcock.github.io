@@ -7,15 +7,38 @@
    viewBox="0 0 63.423237 63.423237"
    version="1.1"
    id="svg1"
+   sodipodi:docname="flower_button.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="4.1717097"
+     inkscape:cx="119.73508"
+     inkscape:cy="119.85494"
+     inkscape:window-width="1713"
+     inkscape:window-height="1380"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
   <defs
      id="defs1">
     <linearGradient
        id="linearGradient2">
       <stop
-         style="stop-color:#d1a6ff;stop-opacity:1;"
+         style="stop-color:#d1a6ff;stop-opacity:0;"
          offset="0.9134295"
          id="stop2" />
       <stop
@@ -42,12 +65,6 @@
        cx="86.734428"
        cy="101.85519"
        r="31.711617" />
-    <circle
-       style="fill:#d1a6ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:26.6324;stroke-linecap:round;paint-order:stroke fill markers"
-       id="path2"
-       cx="86.835381"
-       cy="101.75963"
-       r="28.920374" />
     <path
        style="fill:#bf80ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.6596;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        d="m 85.812736,91.670886 c 0,0 -0.902533,-9.1141 4.836659,-6.507318 5.739191,2.606777 -0.49037,11.355442 -0.49037,11.355442 l -4.277792,1.88153 z"

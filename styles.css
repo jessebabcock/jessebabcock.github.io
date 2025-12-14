@@ -5,9 +5,9 @@
 :root {
     --bs-body-font-family: sans-serif;
 
-    --wave-main: #9bc5d5;
-    --wave-secondary: #3995b5;
-    --wave-tertiary: #7ab8ca;
+    --wave-main: #d9eaff;
+    --wave-secondary: #5c9fbe;
+    --wave-tertiary: #c4e3ff;
     --wave-nav-font: #053341;
 
     --fragrant-main: #e8d4ff;
@@ -27,6 +27,7 @@
 
 #wave{
     z-index: 0;
+    opacity: 0;
 }
 
 h1{
@@ -35,7 +36,7 @@ h1{
 
 #color_mode{
     position: fixed;
-    top: 9%;
+    top: 70px;
     left: 90%;
     border-radius: 50%;
     background:none;
