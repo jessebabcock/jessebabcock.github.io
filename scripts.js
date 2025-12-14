@@ -15,6 +15,7 @@ function catPositionCalc(){
         fileName = 'home'
     }
     document.getElementById("purple_cat").alt = "purple cat sitting above the " + fileName + " button";
+    document.getElementById("blue_cat").alt = "blue cat sitting above the " + fileName + " button";
     catPic.style.visibility = "visible";
 }
 
@@ -58,6 +59,8 @@ const blueCat = document.getElementById("blue_cat");
 purpleCat.style.opacity = "100";
 blueCat.style.opacity = "0";
 
+let blueHidden = blueCat.ariaHidden;
+
 colorModeButton.addEventListener('click', function(){
     flower.style.opacity = (flower.style.opacity ^ 100).toString();
     wave.style.opacity = (wave.style.opacity ^ 100).toString();
@@ -68,6 +71,11 @@ colorModeButton.addEventListener('click', function(){
     wave.style.transition = "opacity .25s";
     blueCat.style.transition = "opacity .5s";
     purpleCat.style.transition = "opacity .5s";
+
+    //i guess cant do blueCat.ariaHidden = !blueCat.ariaHidden but this works
+    blueHidden = !blueHidden;
+    blueCat.ariaHidden = blueHidden
+    purpleCat.ariaHidden = (!blueHidden).toString();
 
     let target = fragrantTheme;
     if (flower.style.opacity !== "100"){
