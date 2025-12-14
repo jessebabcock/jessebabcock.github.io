@@ -9,6 +9,7 @@ function catPositionCalc(){
     const navButton = document.getElementById(fileName);
 
     //center cat on buttons
+    console.log(navButton.offsetTop)
     catPic.style.left = (navButton.offsetLeft + navButton.offsetWidth / 2 - catPic.offsetWidth / 2).toString() + "px";
     catPic.style.top = (navButton.offsetTop - 40).toString() + "px";
     if (fileName === 'index'){
