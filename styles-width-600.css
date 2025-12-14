@@ -3,6 +3,11 @@
         text-align: center;
     }
 
+
+    #color_mode{
+        scale: .75;
+    }
+
     .image-set {
         margin: 0 auto 10px;
     }
