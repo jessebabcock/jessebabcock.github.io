@@ -60,6 +60,7 @@ h1{
 
 #cat_container {
     position: absolute;
+    visibility: hidden;
 }
 
 #purple_cat {
