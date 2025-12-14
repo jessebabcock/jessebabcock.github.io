@@ -69,8 +69,8 @@ colorModeButton.addEventListener('click', function(){
 
     flower.style.transition = "opacity .25s";
     wave.style.transition = "opacity .25s";
-    blueCat.style.transition = "opacity .5s";
-    purpleCat.style.transition = "opacity .5s";
+    blueCat.style.transition = "opacity .4s";
+    purpleCat.style.transition = "opacity .4s";
 
     //i guess cant do blueCat.ariaHidden = !blueCat.ariaHidden but this works
     blueHidden = !blueHidden;
